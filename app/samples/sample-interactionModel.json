@@ -1,0 +1,72 @@
+{
+    "languageModel": {
+        "invocationName": "hello world",
+        "intents": [
+            {
+                "name": "AMAZON.CancelIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.HelpIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "AMAZON.StopIntent",
+                "slots": [],
+                "samples": []
+            },
+            {
+                "name": "NameIntent",
+                "slots": [
+                    {
+                        "name": "name_type",
+                        "type": ""
+                    }
+                ],
+                "samples": [
+                    "Who are you",
+                    "What's your {name_type} name",
+                    "What's your name",
+                    "Hi"
+                ]
+            }
+        ],
+        "types": [
+            {
+                "name": "NAME_TYPES",
+                "values": [
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "full",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "last",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "middle",
+                            "synonyms": []
+                        }
+                    },
+                    {
+                        "id": "",
+                        "name": {
+                            "value": "first",
+                            "synonyms": []
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
