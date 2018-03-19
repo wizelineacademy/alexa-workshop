@@ -1,0 +1,28 @@
+{
+  "name": "alexaworkshop",
+  "version": "1.0.0",
+  "description": "Alexa Skill startup project for the Alexa Workshop from Wizeline Academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizelineacademy/alexa-workshop.git"
+  },
+  "author": "Gustavo Cordova <gustavo@wizeline.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/wizelineacademy/alexa-workshop/issues"
+  },
+  "homepage": "https://github.com/wizelineacademy/alexa-workshop#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.25"
+  }
+}
+
+
+
+
+
+

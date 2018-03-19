@@ -1,6 +1,6 @@
 # Wizeline Academy: Alexa Skill Workshop
 
-![Alexa Workshop Hero](./images/alexaworkshop.jpg)
+![Alexa Workshop Hero](./resources/images/alexaworkshop.jpg)
 
 Hi! Welcome to Wizeline Academy: Alexa Skill Workshop.
 
@@ -78,6 +78,6 @@ To test your installation:
    ```
    cd Documents
    ```
-2. In your command line, run **git clone https://github.com/wizelineacademy/AlexaWorkshop.git**. You should be able to see the Alexa Skill Workshop files in your computer.
+2. In your command line, run **git clone https://github.com/wizelineacademy/alexa-workshop.git**. You should be able to see the Alexa Skill Workshop files in your computer.
 
 If you prefer using a visual application for Git, we recommend [GitHub Desktop](https://desktop.github.com/).
