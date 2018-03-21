@@ -15,11 +15,11 @@ const LAST_NAME = 'My only name is Alexa, feel free to give me a last name';
 
 var handlers = {
   'LaunchRequest': function () {
-    this.emit('HelloWorldIntent');
+    this.emit('NameIntent');
   },
 
   'NameIntent': function () {
-    const nameType = this.event.request.intent.slots.name.value;
+    const nameType = (this.event.request.intent.slots.name) ? this.event.request.intent.slots.name.value : 'full';
     let alexaName;
 
     switch (nameType) {
