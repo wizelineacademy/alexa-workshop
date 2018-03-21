@@ -1,6 +1,7 @@
 var Alexa = require('alexa-sdk');
 
 const SKILL_NAME = 'Hello World';
+const WELCOME_MESSAGE = 'Hello, this is Hello World. How can I help you with?';
 const HELP_MESSAGE = 'You can ask for my name, last name, or full name';
 const HELP_REPROMPT = 'What can I help you with?';
 const STOP_MESSAGE = 'Thank you for using Alexa, goodbye!';
@@ -15,7 +16,9 @@ const LAST_NAME = 'My only name is Alexa, feel free to give me a last name';
 
 var handlers = {
   'LaunchRequest': function () {
-    this.emit('NameIntent');
+    this.response.speak(WELCOME_MESSAGE)
+      .listen(STOP_MESSAGE);
+    this.emit(':responseReady');
   },
 
   'NameIntent': function () {
@@ -34,9 +37,8 @@ var handlers = {
         break;
       case 'full':
       default:
-        const factArr = data;
-        const factIndex = Math.floor(Math.random() * factArr.length);
-        alexaName = FULL_NAME;
+        const factIndex = Math.floor(Math.random() * FULL_NAME.length);
+        alexaName = FULL_NAME[factIndex];
     };
 
     this.response.cardRenderer(SKILL_NAME, alexaName);
@@ -58,6 +60,9 @@ var handlers = {
   'AMAZON.StopIntent': function () {
     this.response.speak(STOP_MESSAGE);
     this.emit(':responseReady');
+  },
+  'Unhandled': function () {
+    this.emit('LaunchRequest');
   },
 };
 
